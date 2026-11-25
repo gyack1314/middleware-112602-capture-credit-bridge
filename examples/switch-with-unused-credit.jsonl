@@ -1,0 +1,10 @@
+{"at":0,"kind":"pool","record":{"group":"g","cap":9,"reserve":2}}
+{"at":0,"kind":"open","record":{"source":"a","connection":"old"}}
+{"at":1,"kind":"credit","record":{"source":"a","connection":"old","credit":"q","groups":["g"],"class":"normal","bytes":6}}
+{"at":2,"kind":"fragment","record":{"source":"a","connection":"old","credit":"q","id":"f","groups":["g"],"bytes":2}}
+{"at":3,"kind":"switch","record":{"source":"a","prev":"old","next":"new"}}
+{"at":4,"kind":"restart","record":{}}
+{"at":5,"kind":"credit","record":{"source":"a","connection":"new","credit":"r","groups":["g"],"class":"normal","bytes":5}}
+{"at":6,"kind":"stopped","record":{"source":"a","connection":"old","last":["f"]}}
+{"at":7,"kind":"fragment","record":{"source":"a","connection":"old","credit":"q","id":"f","groups":["g"],"bytes":2}}
+{"at":8,"kind":"inspect","record":{"source":"a"}}

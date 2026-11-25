@@ -1,0 +1,12 @@
+{"at":0,"kind":"pool","record":{"group":"g1","cap":12,"reserve":3}}
+{"at":0,"kind":"pool","record":{"group":"g2","cap":9,"reserve":2}}
+{"at":1,"kind":"open","record":{"source":"a","connection":"c1"}}
+{"at":2,"kind":"credit","record":{"source":"a","connection":"c1","credit":"v","groups":["g1","g2"],"class":"normal","bytes":5}}
+{"at":3,"kind":"fragment","record":{"source":"a","connection":"c1","credit":"v","id":"f1","groups":["g1","g2"],"bytes":5}}
+{"at":4,"kind":"done","record":{"group":"g1","source":"a","id":"f1"}}
+{"at":5,"kind":"pool","record":{"group":"g2","cap":3,"reserve":1}}
+{"at":6,"kind":"credit","record":{"source":"a","connection":"c1","credit":"p","groups":["g2"],"class":"essential","bytes":1}}
+{"at":7,"kind":"inspect","record":{"group":"g2"}}
+{"at":8,"kind":"done","record":{"group":"g2","source":"a","id":"f1"}}
+{"at":9,"kind":"done","record":{"group":"g2","source":"a","id":"f1"}}
+{"at":10,"kind":"inspect","record":{"group":"g2"}}
